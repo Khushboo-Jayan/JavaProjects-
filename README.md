@@ -1,4 +1,4 @@
 # testjava1
 Inclass example
-Just another hello world!\n
+Just another hello world!
 Psytrans
