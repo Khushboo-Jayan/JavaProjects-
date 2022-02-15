@@ -1,7 +1,2 @@
-# testjava1
-Inclass example
-Just another hello world!
-Sleeping 
-Singing
-Yoga
-Psytrance Playing a flute
+# Starting java course online
+Learning java online and using git to push daily changes
