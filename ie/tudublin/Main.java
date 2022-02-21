@@ -67,5 +67,9 @@ public class Main {
         //2d using curly braces 
         int[][] arrayCurly= { {1,2,3}, {4,5,6}};
         System.out.println(Arrays.deepToString(arrayCurly));
+
+        //constants
+        final float PI = 3.14f;
+        System.out.println(PI);
     }
 }
