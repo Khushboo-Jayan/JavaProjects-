@@ -1,7 +1,6 @@
 package ie.tudublin;
 
 import java.text.NumberFormat;
-import java.util.Currency;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -25,15 +24,15 @@ public class Manipulation {
 
         System.out.println(NumberFormat.getPercentInstance().format(0.69));
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter your age: ");
-        byte age = scanner.nextByte();
-        System.out.println("You are "+age);   
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter your age: ");
+            byte age = scanner.nextByte();
+            System.out.println("You are "+age);   
 
-        Scanner scanner2 = new Scanner(System.in);
-        System.out.print("Enter Name: ");
-        String name = (scanner2.nextLine()).trim();
-        System.out.println("You are "+name);
+            System.out.print("Enter Name: ");
+            String name = (scanner.nextLine()).trim();
+            System.out.println("You are "+name);
+        }
 
     }
 }
