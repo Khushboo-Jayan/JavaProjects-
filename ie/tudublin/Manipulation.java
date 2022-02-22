@@ -32,6 +32,17 @@ public class Manipulation {
             System.out.print("Enter Name: ");
             String name = (scanner.nextLine()).trim();
             System.out.println("You are "+name);
+
+            //if i try to read a string value after reading an inte value the new line 
+            //character of integer that was not read by the scanner would be read as an input hence it skips one enter
+            //to avoid this use scanner.nectLine() and clear the buffer
+
+            System.out.println("Enter age");
+            int ageDemo = scanner.nextInt();
+            scanner.nextLine();
+            System.out.println("Enter you name");
+            String user = scanner.nextLine();
+            System.out.println("Hi " + user + " you are " + ageDemo + " years old.");
         }
 
     }
